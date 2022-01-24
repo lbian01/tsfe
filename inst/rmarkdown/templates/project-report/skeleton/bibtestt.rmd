@@ -1,0 +1,25 @@
+---
+title: "bibtestt"
+author: "Me me me me!"
+bibliography: references.bib
+output:
+   bookdown::pdf_document2:
+     toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse) 
+library(tidyquant)
+library(tsfe)
+library(fpp2)
+library(bookdown) ## this needs to be installed to knit this document to a pdf for submission
+## When you knitr the document the references should automatically populate at the end of the document
+```
+
+
+
+
+Application written in the R programming language [@RCoreTeam] using the Shiny framework [@Chang2015].
+
+# REFERENCES

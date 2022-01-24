@@ -2,7 +2,8 @@
 title: "Untitled"
 author: "Student name(s)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-bibliograph: ["refs.bib"]
+bibliography: references.bib
+nocite: '@*'
 output:
    bookdown::pdf_document2:
      toc: true
@@ -44,6 +45,7 @@ It should be sufficiently non-technical that an intelligent person who is unfami
 Use high-quality literature to illustrate the pros and cons of the argument. 
 
 Some examples of how to use the `.bib` to add references
+so we here refere to [@Beatty]
 * In line `@Jensen2021` renders as Jensen (2021)
 * And `[@Jensen]` renders as (Jensen 2021)
 
@@ -73,3 +75,8 @@ Summarise and state your critical assessment using any evidence you have provide
 ## Reference
 
 *This is where the cited references should appear when you render the document to a pdf*
+
+
+Application written in the R programming language [@RCoreTeam] using the Shiny framework [@Chang2015].
+
+# REFERENCES
